@@ -1,13 +1,14 @@
 const computerChoiceDisplay = document.getElementById('computer-choice');
 const userChoiceDisplay = document.getElementById('your-choice');
 const result = document.getElementById('result');
-const possibleChoice = document.querySelectorAll('button');
+const possibleChoice = document.querySelectorAll('.button');
+const confirmButton = document.getElementById('confirm');
 let userChoice
 let computerChoice;
 
-// const rock = document.getElementById('rock');
-// const paper = document.getElementById('paper');
-// const scissor = document.getElementById('scissor');
+// const Rock = document.getElementById('Rock');
+// const Paper = document.getElementById('Paper');
+// const Scissor = document.getElementById('Scissor');
 
 
 possibleChoice.forEach(possibleChoice => possibleChoice.addEventListener('click', (e)=>{
@@ -16,11 +17,11 @@ possibleChoice.forEach(possibleChoice => possibleChoice.addEventListener('click'
     computerChoice = Math.floor(Math.random() * 3) + 1;
 
     switch(computerChoice) {
-        case 1: computerChoice = 'rock';
+        case 1: computerChoice = 'Rock';
         break;
-        case 2: computerChoice = 'paper';
+        case 2: computerChoice = 'Paper';
         break;
-        case 3: computerChoice = 'scissor';
+        case 3: computerChoice = 'Scissor';
         break;
     }
     computerChoiceDisplay.innerHTML = computerChoice;
@@ -28,22 +29,25 @@ possibleChoice.forEach(possibleChoice => possibleChoice.addEventListener('click'
     if (userChoice === computerChoice){
         result.innerHTML = "It's a Draw";
     }
-    if (userChoice === 'rock' && computerChoice === 'paper'){
+    if (userChoice === 'Rock' && computerChoice === 'Paper'){
         result.innerHTML = "You Lose!";
     }
-    if (userChoice === 'rock' && computerChoice === 'scissor'){
+    if (userChoice === 'Rock' && computerChoice === 'Scissor'){
         result.innerHTML = "You Win!";
     } 
-     if (userChoice === 'paper' && computerChoice === 'rock'){
+     if (userChoice === 'Paper' && computerChoice === 'Rock'){
         result.innerHTML = "You Win!";
     } 
-     if (userChoice === 'paper' && computerChoice === 'scissor'){
+     if (userChoice === 'Paper' && computerChoice === 'Scissor'){
         result.innerHTML = "You Lose!";
     } 
-     if (userChoice === 'paper' && computerChoice === 'rock'){
+     if (userChoice === 'Paper' && computerChoice === 'Rock'){
         result.innerHTML = "You Win!";
     } 
-     if (userChoice === 'paper' && computerChoice === 'scissor'){
+     if (userChoice === 'Paper' && computerChoice === 'Scissor'){
         result.innerHTML = "You Lose!";
     }
 }))
+confirmButton.addEventListener('click', function() {
+    console.log('hola')
+})
