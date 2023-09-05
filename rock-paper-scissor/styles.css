@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #001d3d;
+    color: #edf2f4;
+    overflow: hidden;
+    z-index: -1;
+}
+section {
+    width: 50%;
+    height: 100%;
+    /* padding: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.computerSection {
+    border-left: 3px solid #fff;
+}
+button {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.userSection .button__container button:hover {
+    background: #778da9;
+    cursor: pointer;
+    transition: all .3s;
+    scale: 1.05;
+    border: 2px double black;
+    color: white;
+    font-weight: 600;
+}
+
+#your-choice {
+    color: #000;
+}
+.userChoice__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 40%;
+    background: #fff;
+    margin-top: 2rem;
+}
+.buttonsSection {
+    margin: 1rem 0;
+}
+#Confirm {
+    width: 100%;
+    margin: 1rem 0;
+    height: 45px;
+}
+#Confirm:hover {
+    background-color: #778da9;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+.result {
+    position: absolute;
+    width: 400px;
+    height: 120px;
+    height: objetct;
+    background-color: #e0e1dd;
+    color: #989292;
+    text-align: center;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    display: none;
+}
+.show {
+    background-color: #a90d0d;
+    display: flex;
+    width: 400px;
+    height: 120px;
+    color: #fff;
+    font-size: 20px;
+    padding: 1rem;
+}
+#result {
+    font-size: 46px;
+    font-weight: 700;
+} 
+/* .computerSection {
+    margin: 1rem;
+} */
+.computer__span {
+    margin-bottom: 2rem;
+}
+.computerSection .button__container {
+    margin-bottom: 55px;    
+}
