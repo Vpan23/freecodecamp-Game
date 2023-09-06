@@ -9,10 +9,21 @@
   <body>
     <div class="container">
       <section class="userSection">
-        <h2>Your Choice:</h2>
+        <h2>Your Choice: <span id="your-choice"></span></h2>
 
         <div class="userChoice__img">
-          <span id="your-choice"></span>
+
+          <div class="img__contain" id="userImg__1">
+            <img src="assets/piedra.png" alt="" />
+          </div>
+          <div class="img__contain" id="userImg__2">
+            <img src="assets/papel.png" alt="" />
+          </div>
+          <div class="img__contain" id="userImg__3">
+            <img src="assets/tijera.png" alt="" />
+          </div>
+
+          
         </div>
 
         <div class="buttonsSection">
@@ -25,19 +36,33 @@
         </div>
       </section>
       <section class="computerSection">
-        <h2>Computer Choice: <span id="computer-choice"></span></h2>
+        <h2>
+          Computer Choice:
+          <span id="computer-choice"></span>
+        </h2>
 
         <div class="userChoice__img">
-            <span id="computer-choice"></span>
+          
+          <div class="img__contain" id="img__1">
+            <img src="assets/piedra.png" alt="" />
           </div>
-  
-          <div class="buttonsSection">
-            <div class="button__container">
-              <button class="button">Rock</button>
-              <button class="button">Paper</button>
-              <button class="button">Scissor</button>
-            </div>
+          <div class="img__contain" id="img__2">
+            <img src="assets/papel.png" alt="" />
           </div>
+          <div class="img__contain" id="img__3">
+            <img src="assets/tijera.png" alt="" />
+          </div>
+
+          <span id="computer-choice"></span>
+        </div>
+
+        <div class="buttonsSection">
+          <div class="button__container">
+            <button class="button">Rock</button>
+            <button class="button">Paper</button>
+            <button class="button">Scissor</button>
+          </div>
+        </div>
       </section>
 
       <div class="result">
