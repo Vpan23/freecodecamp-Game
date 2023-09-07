@@ -226,8 +226,12 @@ img {
     .computerSection .buttonsSection {
         display: none;
     }
+    .userSection{
+        height: 55%;
+    }
     .computerSection {
         border-top: 3px solid #fff;
         border-left: none;
+        height: 45%;
     }
 }
