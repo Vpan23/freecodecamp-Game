@@ -101,24 +101,31 @@ confirmButton.addEventListener("click", function () {
 
     if (userChoice === computerChoice) {
       result.innerHTML = "It's a Draw!";
+      resultMsg.classList.toggle("showDraw");
     }
     if (userChoice === "Rock" && computerChoice === "Paper") {
       result.innerHTML = "You Lose!";
+      resultMsg.classList.toggle("show");     
     }
     if (userChoice === "Rock" && computerChoice === "Scissor") {
       result.innerHTML = "You Win!";
+      resultMsg.classList.toggle("showWin");
     }
     if (userChoice === "Paper" && computerChoice === "Rock") {
       result.innerHTML = "You Win!";
+      resultMsg.classList.toggle("showWin");
     }
     if (userChoice === "Paper" && computerChoice === "Scissor") {
       result.innerHTML = "You Lose!";
+      resultMsg.classList.toggle("show");
     }
-    if (userChoice === "Paper" && computerChoice === "Rock") {
+    if (userChoice === "Scissor" && computerChoice === "Paper") {
       result.innerHTML = "You Win!";
+      resultMsg.classList.toggle("showWin");
     }
-    if (userChoice === "Paper" && computerChoice === "Scissor") {
+    if (userChoice === "Scissor" && computerChoice === "Rock") {
       result.innerHTML = "You Lose!";
+      resultMsg.classList.toggle("show");
     }
 
     // cierre de la ventana de Resultado.
@@ -132,6 +139,12 @@ confirmButton.addEventListener("click", function () {
       userImg1.style.display = "none";
       userImg2.style.display = "none";
       userImg3.style.display = "none";
+      userChoice = "";
+      userChoiceDisplay.innerHTML =  "";
+      computerChoiceDisplay.innerHTML = "";
+      resultMsg.classList.remove("show");
+      resultMsg.classList.remove("showWin");
+      resultMsg.classList.remove("showDraw");
     }, 1000);
   }
 });
