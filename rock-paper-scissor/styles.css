@@ -74,7 +74,11 @@ button {
     background-color: #548b23;
     cursor: pointer;
     color: white;
-    font-weight: 500;
+    transition: all .3s;
+    scale: 1.05;
+    border: 1px double black;
+    color: white;
+    font-weight: 600;
 }
 .result {
     position: absolute;
@@ -160,6 +164,7 @@ img {
         flex-direction: column;
         height: 100dvh;
         width: 100%;
+        min-width: 250px;
         /* overflow: auto; */
     }
     section {
@@ -181,6 +186,18 @@ img {
         align-items: center;
         display: none;
     }
+    .userChoice__img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 40%;
+        background: #fff;
+        margin-top: 2rem;
+    }
+    .buttonsSection {
+        margin: 0;
+    }
     #computer-choice {
         color: #1c79dd;
     }
@@ -194,11 +211,15 @@ img {
         font-size: 12px;
         border-radius: 5px;
         border: 1px solid #000;
+        margin: 1rem 0;
     }
     #Confirm {
         width: 100%;
-        margin: 1rem 0;
-        height: 45px;
+        margin: 0;
+        height: 40px;
         border: 1px solid #fff;
+    }
+    .computerSection .buttonsSection {
+        display: none;
     }
 }

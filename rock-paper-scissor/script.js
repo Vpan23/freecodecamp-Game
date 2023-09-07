@@ -88,14 +88,6 @@ confirmButton.addEventListener("click", function () {
         }
         break;
     }
-    // se añade la funcion de mostrar la imagen.
-    //  imgShow.style.display = 'flex';
-
-    // Carga para elementos de la eleccion de la Computador
-    // computerRandom = Math.floor(Math.random() * 3) + 1;
-    // for(let i=0; i<computerRandom; i++) {
-    //     console.log(i);
-    // }
 
     computerChoiceDisplay.innerHTML = computerChoice;
 
